@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    color: var(--white);
+    margin-top: 25px;
+    padding: 0 5px;
+    font-weight: 600;
+}
+
+p {
+    color: var(--softblue);
+    margin-top: 15px;
+    padding: 0 5px;
+    font-weight: 300;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+}
+
+.card-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.stats-container {
+    display: block;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    width: 100%;
+}
+
+.stats-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--white);
+    border-bottom: 1px solid var(--very-dark-line);
+}
+
+.stats-container ul li {
+    list-style: none;
+    color: var(--softblue);
+    margin-top: 20px;
+}
+
+.stats-container ul li img {
+    margin-right: 5px;
+}
+
+.stats-container ul li span {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.creator {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--softblue);
+    height: 100%;
+}
+
+.creator ul {
+    display: flex;
+    list-style: none;
+}
+
+.creator img {
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    
+}
+
+.creator p {
+    padding-left: 10px;
+}
+
+.creator span {
+    color: var(--white);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+    margin-top: 30px;
+}
+
+.attribution a { 
+    color: hsl(341, 86%, 67%); 
+}
+
+@media only screen and (min-width: 375px) {
+    .card-container {
+        max-width: 350px;
+    }
+}
