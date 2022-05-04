@@ -95,26 +95,21 @@ p {
 
 .creator {
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
     color: var(--softblue);
     height: 100%;
 }
 
-.creator ul {
-    display: flex;
-    list-style: none;
-}
 
 .creator img {
     height: 35px;
     border-radius: 50%;
-    border: 1px solid var(--white);
-    
+    border: 1px solid var(--white);    
 }
 
-.creator p {
+.creator > div {
     padding-left: 10px;
 }
 
